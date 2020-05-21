@@ -1,0 +1,17 @@
+.main-window {
+    display: flex;
+    border: 2px red solid;
+}
+.main-window .h2 {
+    display: inline;
+}
+.setup-panel {
+    border: 2px blue solid;
+}
+.timer-display {
+    border: 2px purple solid;
+}
+.custom-interval-pane {
+    border: 2px green solid;
+    display: inline;
+}

@@ -23,7 +23,7 @@ class SetupPanel extends React.Component {
 
     renderPanel=()=>{
         return (
-            <div>
+            <div className='setup-panel'>
                 <label>Select Interval (Low : High)</label>
                 <select name="interval" onChange={this.selectChange}>
                     <option value={EASY}>{EASY}</option>
@@ -33,12 +33,13 @@ class SetupPanel extends React.Component {
 
                 </select>
                 {this.renderCustomIntervalPane()}
+                <button className='start-button'>Start</button>
             </div>
         );
     }
     render(){
         return (
-            <div>{this.renderPanel()}</div>
+            this.renderPanel()
         );
     }
 }
